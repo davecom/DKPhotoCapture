@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubN-lh-l5m">
+                                <rect key="frame" x="211" y="522" width="178" height="30"/>
+                                <state key="normal" title="Open Photo Capture View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="displayPhotoCaptureView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oRh-45-HAH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4SW-eG-A3w">
+                                <rect key="frame" x="168" y="139" width="264" height="294"/>
+                                <color key="backgroundColor" red="0.99215686270000003" green="0.4039215686" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.99215686270000003" green="0.4039215686" blue="0.086274509799999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="0mb-6I-zDG"/>
+                                    <constraint firstAttribute="height" constant="153" id="Qpo-I0-aBp"/>
+                                    <constraint firstAttribute="width" constant="264" id="Qrh-Xr-xSd"/>
+                                    <constraint firstAttribute="height" constant="294" id="Qxj-kN-fWe"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0mb-6I-zDG"/>
+                                        <exclude reference="Qpo-I0-aBp"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4SW-eG-A3w" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="92" id="9jm-LK-eMZ"/>
+                            <constraint firstAttribute="centerX" secondItem="ubN-lh-l5m" secondAttribute="centerX" id="ObI-Jr-w9g"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="ubN-lh-l5m" secondAttribute="bottom" constant="48" id="RQ3-uu-oXh"/>
+                            <constraint firstAttribute="centerY" secondItem="4SW-eG-A3w" secondAttribute="centerY" constant="14.5" id="WA0-NP-Owu"/>
+                            <constraint firstAttribute="centerX" secondItem="4SW-eG-A3w" secondAttribute="centerX" id="yUD-xb-XhF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9jm-LK-eMZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="4SW-eG-A3w" id="Cv4-pa-NxA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
