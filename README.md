@@ -20,7 +20,7 @@ A camera capture class like UIImagePickerController that also allows for scribbl
 No Cocoapod yet. Your project will need the following files:
 * `DKEditorView.h` & `DKEditorView.m`
 * `DKPhotoCapture.h` & `DKPhotoCapture.m`
-* `DKVerticalColorPicker.h` & `DKVerticalColorPicker.m` (DKVerticalColorPicker)[https://github.com/davecom/DKVerticalColorPicker]
+* `DKVerticalColorPicker.h` & `DKVerticalColorPicker.m` !(DKVerticalColorPicker)[https://github.com/davecom/DKVerticalColorPicker]
 * `ForwardingTextField.h` & `ForwardingTextField.m`
 * `UIImage+Scale.h` & `UIImage+Scale.m`
 * `DKImageEdit.xib`
