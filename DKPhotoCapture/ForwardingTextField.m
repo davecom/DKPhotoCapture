@@ -22,28 +22,28 @@
 {
     [super touchesBegan:touches withEvent:event];
     [self.nextResponder touchesBegan:touches withEvent:event];
-    NSLog(@"Textfield Touches Began");
+    //NSLog(@"Textfield Touches Began");
 }
 
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesMoved:touches withEvent:event];
     [self.nextResponder touchesMoved:touches withEvent:event];
-    NSLog(@"Textfield Touches Moved");
+    //NSLog(@"Textfield Touches Moved");
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesEnded:touches withEvent:event];
     [self.nextResponder touchesEnded:touches withEvent:event];
-    NSLog(@"Textfield Touches Ended");
+    //NSLog(@"Textfield Touches Ended");
 }
 
 -(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [super touchesCancelled:touches withEvent:event];
     [self.nextResponder touchesCancelled:touches withEvent:event];
-    NSLog(@"Textfield Touches Cancelled");
+    //NSLog(@"Textfield Touches Cancelled");
 }
 
 // placeholder position

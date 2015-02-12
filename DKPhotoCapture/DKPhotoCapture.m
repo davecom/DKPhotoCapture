@@ -94,7 +94,7 @@
     
     self.imagePickerController = imagePickerController;
     self.viewController = viewController;
-    [viewController presentViewController:self.imagePickerController animated:YES completion:nil];
+    [viewController presentViewController:self.imagePickerController animated:NO completion:nil];
     
     return YES;
 }

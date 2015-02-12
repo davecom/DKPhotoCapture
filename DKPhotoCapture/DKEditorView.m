@@ -97,6 +97,7 @@ CGFloat brush = 5.0;
         self.textField.delegate = self;
         self.textField.multipleTouchEnabled = YES;
         self.textField.exclusiveTouch = NO;
+        self.textField.textAlignment = NSTextAlignmentCenter;
         [self addSubview:self.textField];
     }
     if (self.textField.hidden == YES) {
@@ -172,7 +173,7 @@ CGFloat brush = 5.0;
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     UITouch *touch = [touches anyObject];
-    NSLog(@"touchesBegan");
+    //NSLog(@"touchesBegan");
     CGPoint point = [touch locationInView:self];
     if (self.textField != nil && CGRectContainsPoint(self.textField.frame, point) && !self.textField.hidden) {
         NSLog(@"touched textfield");
@@ -193,7 +194,7 @@ CGFloat brush = 5.0;
         [self setNeedsDisplay];
     }
     if(self.isDrawing){
-        NSLog(@"touchmoved");
+        //NSLog(@"touchmoved");
         UITouch *touch = [touches anyObject];
         CGPoint currentPoint = [touch locationInView:self];
         
@@ -225,7 +226,7 @@ CGFloat brush = 5.0;
         self.isMovingText = NO;
     }
     if(self.isDrawing){
-        NSLog(@"touchended");
+        //NSLog(@"touchended");
         UIGraphicsBeginImageContext(self.frame.size);
         [self.image drawAtPoint:CGPointMake(0.0, 0.0)];
         CGContextSetLineCap(UIGraphicsGetCurrentContext(), kCGLineCapRound);
